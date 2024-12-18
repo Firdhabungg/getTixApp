@@ -8,23 +8,32 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="POST" action="<?= base_url('auth/registration'); ?>">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="name" name="name"
+                                        <input type="text" class="form-control form-control-user" id="name" name="name" value="<?= set_value('name'); ?>"
                                             placeholder="Full name">
+                                        <small class="text-danger"><?= form_error('name'); ?></small>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" id="email" name="email"
-                                            placeholder="Email Address">
+                                            placeholder="Email Address" value="<?= set_value('email'); ?>">
+                                            <small class="text-danger"><?= form_error('email'); ?></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" id="telepon" name="telepon"
+                                            placeholder="Nomor Telepon" value="<?= set_value('telepon'); ?>">
+                                            <small class="text-danger"><?= form_error('telepon'); ?></small>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <input type="password" class="form-control form-control-user"
                                                 id="password1" name="password1" placeholder="Password">
+                                                <small class="text-danger"><?= form_error('password1'); ?></small>
                                         </div>
                                         <div class="col-sm-6">
                                             <input type="password" class="form-control form-control-user"
                                                 id="password2" name="password2" placeholder="Repeat Password">
+                                                <small class="text-danger"><?= form_error('password2'); ?></small>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">

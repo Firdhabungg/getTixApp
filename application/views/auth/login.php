@@ -12,12 +12,14 @@
                                         <h1 class="h3 text-gray-900 mb-4">Login Page</h1>
                                     </div>
                                     <?= $this->session->flashdata('message'); ?>
-                                    <form class="user">
+                                    <form class="user" method="POST" action="<?= base_url('auth'); ?>">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address...">
+                                            <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address..." value="<?= set_value('email'); ?>">
+                                            <small class="text-danger"><?= form_error('email'); ?></small>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                                            <small class="text-danger"><?= form_error('password'); ?></small>
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                                         <hr>

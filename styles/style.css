@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,8 +41,12 @@ nav {
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
 }
+.judul-section {
+    background-color: var(--primary-color);
+    color: #ffffff
+}
 #beli, #event {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 .beli {
     margin-bottom: 3rem;
@@ -54,4 +58,11 @@ nav {
 }
 .footer {
     background-color: var(--primary-color);
+}
+.icon-sosmed {
+    transition: 0.5s ease-in-out;
+}
+.icon-sosmed:hover {
+    transform: scale(1.4);
+    rotate: 360deg;
 }

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #6610f2;
+    --secondary-color: #20c997;
+    --tertiary-color: #edf6f9;
+
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #000000;
+
+    --primary-button-color: #ffba08;
+    --secondary-button-color: #1d3557;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.gettix {
+    font-family: 'Lilita', sans-serif;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: var(--primary-button-color);
+}
+nav {
+    background-color: var(--primary-color);
+}
+.btn-buy {
+    font-family: 'Lilita', sans-serif;
+}
+#hero {
+    padding-top: 75px;
+}
+.card-event:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+#beli, #event {
+    padding-top: 100px;
+}
+.beli {
+    margin-bottom: 3rem;
+}
+.kontak {
+    background-color: var(--tertiary-color);
+    padding: 8rem 0;
+    overflow: hidden; // untuk menghilangkan scrollbar horizontal
+}
+.footer {
+    background-color: var(--primary-color);
+}
